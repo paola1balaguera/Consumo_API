@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inclusive Sans", sans-serif;
+}
+
+::selection {
+    background-color: #000;
+    color: #4133ff;
+}
+body {
+    background: url("fondo.jpg");
+    background-size: cover;
+}
+
+/* =========================  ESTILOS GENERALES ========================= */
+
+.container {
+    width: 100%;
+    height: 30vh;
+    background: url("fond2.jpg") no-repeat; 
+    background-size: cover;
+    color: #fff;
+    border: solid 2px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+image{
+    width:100%; height:100%;
+}
+.container h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+
+.contenido {
+    height: fit-content;
+    width: 100%;
+    /* background: linear-gradient(to bottom, red, orange); */
+    background: #0C134F;
+}
+
+
+/* =========================  ESTILOS CONTENIDO  ========================= */
+
+.contenedor_tarjetas {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+    justify-items: center;
+}
+.tarjetas {
+    height: 560px;
+    width: 100%;
+    max-width: 480px;
+    background: #f8f2d9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 1000px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    border: 3px solid #000;
+}
+
+.contenedor_imagen {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen{
+    border: 3px solid #000
+}
+.contenedor_imagen img {
+    height: 90%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.contenedor_texto {
+    height: 30%;
+    width: 100%;
+    display: flex; }
